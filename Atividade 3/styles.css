@@ -1,0 +1,242 @@
+body {
+    background-color: rgb(64, 146, 147);
+  }
+  .formulario-cadastro {
+    max-width: 400px;
+    margin: 30px auto; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.formulario-cadastro h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario-cadastro label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-cadastro input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #daf3f2;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.formulario-cadastro button {
+    width: 100%;
+    padding: 10px;
+    background-color: #19504f; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-cadastro button:hover {
+    background-color: #4a8389; 
+}
+.formulario-tarefa {
+    max-width: 500px;
+    margin: 30px auto; 
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-tarefa h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.formulario-tarefa label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-tarefa input, 
+.formulario-tarefa textarea, 
+.formulario-tarefa select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+}
+
+.formulario-tarefa button {
+    width: 100%;
+    padding: 12px;
+    background-color: #19504f; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formulario-tarefa button:hover {
+    background-color: #4a8389;
+}
+.formulario-reserva {
+    max-width: 450px;
+    margin: 30px auto; 
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-reserva h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formulario-reserva label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-reserva input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /
+}
+
+.formulario-reserva button {
+    width: 100%;
+    padding: 12px;
+    background-color: #19504f; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.formulario-reserva button:hover {
+    background-color: #4a8389; 
+}
+.formulario-login {
+    max-width: 350px;
+    margin: 50px auto; 
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-login h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+    font-family: sans-serif;
+}
+
+.formulario-login label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444444;
+}
+
+.formulario-login input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.formulario-login button {
+    width: 100%;
+    padding: 12px;
+    background-color: #19504f; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s; 
+}
+
+.formulario-login button:hover {
+    background-color: #4a8389; 
+}
+.formulario-contato {
+    max-width: 500px;
+    margin: 40px auto; /* Centraliza na página */
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contato h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.formulario-contato label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.formulario-contato select,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+
+.formulario-contato textarea {
+    resize: vertical;
+}
+
+.formulario-contato button {
+    width: 100%;
+    padding: 12px;
+    background-color: #19504f; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.formulario-contato button:hover {
+    background-color: #4a8389; 
+}

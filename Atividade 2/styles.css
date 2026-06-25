@@ -13,10 +13,36 @@ body {
   text-align: center;
  }
  .imagem-Princesasapo {
-    max-width: 100%;  
-    height: auto;      
-    display: block;    
-    margin-top: 20px;  
-    border-radius: 8px; 
-}
- 
+  width: 200px; 
+  height: auto; 
+  display: block;     
+    margin: 20px auto;  
+
+    }
+    .link-equipe {
+      display: block;
+      text-align: center;   
+      margin: 20px auto;   
+      color: #333333;      
+      text-decoration: none; 
+      font-weight: bold;    /
+  }
+  
+  .link-equipe:hover {
+      color: #555555;      
+
+      }
+        .imagem-pascal {
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+
+        }
+        .imagem-aristogatas {
+          width: 200px;
+          height: auto;
+          display: block;
+          margin: 20px auto;
+        }
+        
