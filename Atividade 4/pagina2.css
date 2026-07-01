@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(245, 228, 206);
+  }
+.container-avisos {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo-principal {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #34495e;
+    padding-bottom: 10px;
+}
+
+.bloco-aviso {
+    background-color: #ffffff;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 6px solid #3498db; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.bloco-aviso.urgente {
+    border-left-color: #e74c3c; 
+    background-color: #fdf2f2;  
+}
+
+.titulo-aviso {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.texto-aviso {
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 0;
+}

@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(245, 228, 206);
+  }
+  
+.titulo-centralizado {
+    text-align: center;
+}
+h1 {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+h1 {
+    font-family: Papyrus;
+} 
+.botao-colorido {
+    background-color: #d19f34; 
+    color: white;             
+    padding: 10px 20px;        
+    font-size: 16px;           
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;           
+    transition: background 0.3s ease; 
+ }
+
+.botao-colorido:hover {
+    background-color: #e5c462; 
+}
+.container-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;     }
+    .caixa-estilizada {
+        padding: 20px; 
+        border: 2px solid #e3c84e; 
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); 
+        max-width: 400px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        font-family: fantasy;
+    }
+    /* Caixa principal do formulário */
+.container-formulario {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    
+    /* Borda e Sombra */
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+    font-family: sans-serif;
+}
+
+/* Título do formulário */
+.container-formulario h2 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+/* Organização de cada campo (Label + Input) */
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    flex: 1; /* Faz os campos dividirem o espaço quando na mesma linha */
+}
+
+/* Estilo dos textos das etiquetas (Labels) */
+.grupo-campo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555555;
+    margin-bottom: 5px;
+}
+.grupo-campo input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.grupo-campo input:focus {
+    border-color: #dbb434;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+.grupo-linha {
+    display: flex;
+    gap: 15px; 
+}

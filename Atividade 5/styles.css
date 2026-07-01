@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(156, 199, 224);
+  }
+  
+.menu-navegacao {
+    background-color: #2c3e50; /* Cor de fundo do menu */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.menu-navegacao ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;         
+    gap: 30px;             
+    justify-content: center; 
+}
+.menu-navegacao a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.menu-navegacao a:hover {
+    background-color: #34495e; 
+    color: #195882;            
+}
+.container-cartoes {
+    display: flex;         
+    gap: 20px;              
+    justify-content: center; 
+    padding: 20px;
+    font-family: sans-serif;
+}
+.cartao {
+    flex: 1;                
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cartao h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.cartao p {
+    color: #7f8c8d;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.cartao:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+}
+.barra-superior {
+    display: flex;                 
+    justify-content: space-between; 
+    align-items: center;           
+    
+    background-color: #2c3e50;      
+    padding: 15px 30px;            
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    font-family: sans-serif;
+}
+.barra-superior .logo-titulo {
+    color: #ffffff;
+    margin: 0;                      
+    font-size: 22px;
+    font-weight: bold;
+}
+.barra-superior .botao-colorido {
+    background-color: #154f66;      
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+.barra-superior .botao-colorido:hover {
+    background-color: #124f5d;      
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+.tela-dividida {
+    display: flex;
+    height: 100vh; 
+}
+.menu-lateral {
+    width: 250px;               
+    background-color: #2c3e50;  
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;     
+}
+.menu-lateral h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 10px;
+}
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-lateral li {
+    margin-bottom: 15px;
+}
+
+.menu-lateral a {
+    color: #ecf0f1;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+.menu-lateral a:hover {
+    background-color: #34495e; 
+}
+.conteudo-principal {
+    flex: 1;                    
+    background-color: #f5f6fa;  
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-y: auto;           
+}
+.mural-responsivo {
+    display: flex;          
+    flex-wrap: wrap;        
+    gap: 20px;             
+    padding: 20px;
+    max-width: 1200px;     
+    margin: 0 auto;         
+    font-family: sans-serif;
+}
+
+.card-aviso {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+    flex: 1 1 300px; 
+}
+.categoria {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.urgente { background-color: #922215; }
+.evento { background-color: #552867; }
+.aviso { background-color: #252281; }
+
+.card-aviso h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 18px;
+}
+
+.card-aviso p {
+    margin: 0;
+    color: #555555;
+    font-size: 14px;
+    line-height: 1.5;
+}

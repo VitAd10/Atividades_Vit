@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-tabela">
+        <table class="tabela-presenca">
+            <thead>
+                <tr>
+                    <th>Nome do Aluno</th>
+                    <th>Turma</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Silva</td>
+                    <td>1º Ano A</td>
+                    <td><span class="status presente">Presente</span></td>
+                </tr>
+                <tr>
+                    <td>Bruno Santos</td>
+                    <td>1º Ano A</td>
+                    <td><span class="status ausente">Ausente</span></td>
+                </tr>
+                <tr>
+                    <td>Carlos Oliveira</td>
+                    <td>2º Ano B</td>
+                    <td><span class="status presente">Presente</span></td>
+                </tr>
+                <tr>
+                    <td>Mariana Costa</td>
+                    <td>2º Ano B</td>
+                    <td><span class="status justificado">Justificado</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mural-responsivo">
+        <div class="card-aviso">
+            <span class="categoria urgente">Urgente</span>
+            <h3>Fechamento do quiz de fisica</h3>
+            <p>Os quiziz de fisica fecham esta quinta feira</p>
+        </div>
+
+        <div class="card-aviso">
+            <span class="categoria evento">Aviso</span>
+            <h3>Efetuar pagamento vestibular</h3>
+            <p>O pagamento vai até o dia 21 de julho</p>
+        </div>
+
+        <div class="card-aviso">
+            <span class="categoria aviso">Aviso</span>
+            <h3>Férias de julho</h3>
+            <p>logo vão começar</p>
+        </div>
+    </div>
+
+    <div class="container-acao">
+        <button class="btn-abrir-formulario" id="btnAbrir">
+            <span class="icone">+</span> Nova Inscrição
+        </button>
+    </div>
+
+    <div id="meuFormulario" class="container-formulario escondido">
+        <h2>Cadastro de Aluno</h2>
+        <form>
+            <div class="grupo-campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" placeholder="Digite o nome do aluno">
+            </div>
+            <div class="grupo-campo">
+                <label for="turma">Turma / Ano:</label>
+                <input type="text" id="turma" placeholder="Ex: 1º Ano A">
+            </div>
+            <div class="container-botao">
+                <button type="submit" class="botao-colorido">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const btn = document.getElementById('btnAbrir');
+        const form = document.getElementById('meuFormulario');
+
+        btn.addEventListener('click', function() {
+            form.classList.toggle('escondido');
+        });
+    </script>
+    <div class="container-tarefas">
+        <h2 class="titulo-lista">Minhas Tarefas</h2>
+    
+        <div class="lista-cartoes">
+            <div class="cartao-tarefa prioridade-alta">
+                <div class="conteudo-tarefa">
+                    <h3>Estudar para a prova de Física</h3>
+                    <p>Rever as fórmulas de óptica e fazer os exercícios do capítulo 4.</p>
+                </div>
+                <span class="prazo">Hoje</span>
+            </div>
+    
+            <div class="cartao-tarefa prioridade-media">
+                <div class="conteudo-tarefa">
+                    <h3>Entregar projeto de HTML/CSS</h3>
+                    <p>Finalizar a estilização do formulário e enviar o link do GitHub.</p>
+                </div>
+                <span class="prazo">Amanhã</span>
+            </div>
+    
+            <div class="cartao-tarefa tarefa-concluida">
+                <div class="conteudo-tarefa">
+                    <h3>Comprar caderno novo</h3>
+                    <p>Ir à papelaria comprar o caderno para o próximo semestre.</p>
+                </div>
+                <span class="status-ok">✓ Feito</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
