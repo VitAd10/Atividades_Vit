@@ -1,18 +1,18 @@
 body {
-    background-color: rgb(109, 44, 50);
+    background-color: rgb(121, 72, 113);
   }
 .painel-dashboard {
     max-width: 1000px;
     margin: 30px auto;
     padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #9d6469;
+    background-color: #bc8fb0;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .titulo-painel {
-    color: #4e0d13;
+    color: #7e276b;
     margin-bottom: 25px;
 }
 .secao-cards {
@@ -41,7 +41,7 @@ body {
     margin: 10px 0 0 0;
     font-size: 28px;
     font-weight: bold;
-    color: #602525;
+    color: #a76a92;
 }
 .card-resumo.azul { border-left-color: #3498db; }
 .card-resumo.verde { border-left-color: #2ecc71; }
@@ -54,7 +54,7 @@ body {
 }
 .secao-tabela h2 {
     font-size: 18px;
-    color: #4f2525;
+    color: #be6bb3;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -71,12 +71,12 @@ body {
 .tabela-dados td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #7e2626;
+    border-bottom: 1px solid #c078b5;
 }
 
 .tabela-dados th {
     background-color: #fcfcfc;
-    color: #723f3f;
+    color: #de8fda;
     font-weight: bold;
 }
 
