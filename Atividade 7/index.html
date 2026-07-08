@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Botão</title>
+    <link rel="stylesheet" href="styles.css">
+    <button onclick="mostrarMensagem()">Clique Aqui</button>
+
+<script>
+    function mostrarMensagem() {
+        alert("Olá! Você clicou no botão com sucesso!");
+    }
+</script>
+<h2>Minha Lista de Tarefas</h2>
+
+<input type="text" id="campoTarefa" placeholder="Digite uma nova tarefa...">
+<button onclick="adicionarTarefa()">Adicionar</button>
+
+<ul id="listaTarefas"></ul>
+
+<script>
+    function adicionarTarefa() {
+        var input = document.getElementById("campoTarefa");
+        var textoTarefa = input.value;
+
+       
+        if (textoTarefa.trim() === "") {
+            alert("Por favor, digite uma tarefa!");
+            return;
+        }
+        var novaTagLi = document.createElement("li");
+        novaTagLi.textContent = textoTarefa;
+
+        
+        var lista = document.getElementById("listaTarefas");
+        lista.appendChild(novaTagLi);
+
+        
+        input.value = "";
+    }
+</script>
+<h2>Identificador de Aluno</h2>
+
+<input type="text" id="nomeAluno" placeholder="Digite o nome do aluno...">
+<button onclick="mostrarNome()">Mostrar Nome</button>
+
+<p id="resultado"></p>
+
+<script>
+    function mostrarNome() {
+       
+        var input = document.getElementById("nomeAluno");
+        var nome = input.value;
+        var paragrafo = document.getElementById("resultado");
+        if (nome.trim() === "") {
+            paragrafo.textContent = "Por favor, digite um nome válido.";
+            paragrafo.style.color = "red"; 
+        } else {
+           paragrafo.textContent = "Aluno digitado: " + nome;
+            paragrafo.style.color = "black"; 
+        }
+    }
+
+</script>
+    <h2>Mural de Avisos</h2>
+
+<div style="margin-bottom: 20px;">
+    <input type="text" id="campoAviso" placeholder="Digite o aviso aqui..." style="padding: 8px; width: 250px;">
+    
+    <select id="prioridadeAviso" style="padding: 8px;">
+        <option value="normal">Normal</option>
+        <option value="importante">Importante ⚠️</option>
+    </select>
+    
+    <button onclick="adicionarAviso()" style="padding: 8px 15px; cursor: pointer;">Adicionar Aviso</button>
+</div>
+
+<div id="listaAvisos"></div>
+
+<script>
+    function adicionarAviso() {
+        var inputAviso = document.getElementById("campoAviso");
+        var selectPrioridade = document.getElementById("prioridadeAviso");
+        
+        var texto = inputAviso.value.trim();
+        var prioridade = selectPrioridade.value;
+        if (texto === "") {
+            alert("Por favor, digite um aviso antes de adicionar!");
+            return;
+        }
+
+        var novoAviso = document.createElement("div");
+        novoAviso.textContent = texto;
+        novoAviso.style.padding = "10px";
+        novoAviso.style.marginBottom = "10px";
+        novoAviso.style.borderRadius = "5px";
+        novoAviso.style.borderLeft = "5px solid";
+
+        if (prioridade === "importante") {
+            novoAviso.style.backgroundColor = "#ffcccc"; 
+            novoAviso.style.borderColor = "#ff3333";     
+            novoAviso.style.fontWeight = "bold";
+        } else {
+            novoAviso.style.backgroundColor = "#e2f0d9"; 
+            novoAviso.style.borderColor = "#70ad47";     
+        }
+        var container = document.getElementById("listaAvisos");
+        container.insertBefore(novoAviso, container.firstChild);
+
+        inputAviso.value = "";
+    }
+</script>
+ <h1>Situações em que o navegador usaria o método GET:</h1>
+ <p>Acessar um site ou link: Toda vez que você digita um endereço na barra de navegação (como google.com) ou clica em um link, o navegador usa o GET para solicitar a página ao servidor</p>
+ <p>Realizar buscas: Quando você pesquisa algo em motores como o Google, os termos digitados são passados na URL e a página de resultados é carregada via GET. Isso permite que o usuário copie e compartilhe o link exato da pesquisa</p>
+ <h1>Situações em que o navegador usaria o método POST:</h1>
+ <P>Envio de Formulários de Login ou Cadastro: Quando você preenche um formulário com seus dados pessoais e clica para criar uma conta ou entrar em um site, o navegador usa o POST para enviar essas informações (que incluem dados sensíveis, como senhas) protegidas no corpo da requisição</P>
+ <P>Upload de Arquivos (Uploads): Ao enviar uma imagem, documento ou vídeo para uma rede social ou serviço de armazenamento (como fazer o upload de uma foto de perfil), o navegador utiliza o POST, pois ele suporta o envio de grandes blocos de dados de qualquer tipo ao servidor.</P>
+</body>
+</html>
